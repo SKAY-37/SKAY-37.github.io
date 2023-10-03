@@ -11,16 +11,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>     
+<link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="upBar">
-            <div class="logo">
-                <h1>ALb<span class="Or">o</span>uht<span class="Or">o</span>uri</h1>
+    <div id="container" class="container">
+        <div id="upBar" class="upBar">
+            <div id="logo" class="logo">
+                <h1 id="H1Logo">ALb<span class="Or">o</span>uht<span class="Or">o</span>uri</h1>
             </div>
-            <div class="Menu">
+            <div id="Menu" class="Menu">
                 <div id="MenuBtn" class="MenuButton">
                     <span id="Open" class="Or material-symbols-outlined Large">
                         menu
@@ -29,15 +30,19 @@
                         close
                     </span>
                 </div>
+                
+            
+            
                 <div id="HiddenMenu" class="HiddenMenu">
                     <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="##"><li>News And Blog</li></a>
-                        <a href="###"><li>Announcment</li></a>
-                        <a href="####"><li>About Us</li></a>
-                        <a href="#####"><li>Contact</li></a>
+                        <a onclick="Hello('home.html')" href="#"><li><span class="material-symbols-outlined">Home</span>Home</li></a>
+                        <a href="#"><li><span class="material-symbols-outlined">full_coverage</span>News And Blog</li></a>
+                        <a onclick="Hello()" href="#"><li><span class="material-symbols-outlined">calendar_month</span>Announcment</li></a>
+                        <a href="#"><li><span class="material-symbols-outlined">info</span>About Us</li></a>
+                        <a href="#"><li><span class="material-symbols-outlined">call</span>Contact</li></a>
                     </ul>
                 </div>
+           
             </div>
         </div>
         <div id="Bluring">
@@ -49,10 +54,10 @@
             <div class="content">  
                 <div class="AboveIt">
                     <div class="BackGroundTitle">
-                        <h1><span>Welcome To</span><br> ALBOUHTORI</h1>
+                        <h1><span>Welcome To</span><br><span id="HomeAlbRef">ALBOUHTORI </span></h1>
                     </div>
                     <div class="HeroTexts">
-                        <h1><span>Welcome To</span><br> ALBOUHTORI</h1>
+                        <h1><span>Welcome To</span><br><span id="HomeAlb"> ALBOUHTORI</span></h1>
                         <p>Education is the key to unlocking a world of endless possibilities.</p>
                     </div>
                     <div class="HeroBtn">
