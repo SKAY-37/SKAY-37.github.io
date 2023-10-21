@@ -1,0 +1,440 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    scrollbar-width: none;
+}
+body{
+    background-color: #202020;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+.Lighting{
+    transition: .1s;
+}
+.Lighting:hover{
+    color: #FEDA4E;
+    cursor: pointer;
+    transition: .1s;
+    
+}
+
+.WhiteLighting{
+    transition: .1s;
+
+}
+.WhiteLighting:hover{
+    color:white;
+    cursor: pointer;
+    transition: .1s;
+}
+.logo{
+    cursor: pointer;
+}
+/* On Egde And ... */
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Start Up Bar Style */
+.Grid {
+    width: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.upbar {
+    background-color: #202020;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.upbar .listMenu ul {
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.upbar .listMenu ul a {
+    padding: 20px 30px;
+    transition: .5s;
+    border-bottom: 1px solid transparent;
+}
+
+.upbar .listMenu ul a:hover{
+    border-bottom: 1px Solid #FEDA4E;
+    color: #FEDA4E;
+    transition: .5s;
+}
+
+.socialMedia{
+    position: relative;
+}
+.socialMedia ul {
+    display: flex;
+    place-items: center;
+    /* background-color: brown; */
+}
+
+.socialMedia ul li img {
+    width: 30px;
+}
+.socialMedia svg path{
+    stroke: white;
+    transition: .5s;
+
+}
+.socialMedia ul a {
+    padding: 10px;
+}
+.socialMedia ul a:hover svg path{
+    stroke: #FEDA4E;
+    transition: .5s;
+
+}
+.socialMedia ul li {
+    display: flex;
+    place-items: center;
+}
+
+/* End Up Bar Style */
+/* Start Hero Banner Style */
+.HeroBannerGrid {
+    width: 80%;
+    /* background: red; */
+}
+.BannerLogo{
+    color: #FEDA4E;
+}
+.heroBanner {
+    height: 80vh;
+    /* background-color: chartreuse; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.heroBanner .name {
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: 40px;
+}
+
+.heroBanner .specialisation {
+    text-align: center;
+    font-size: 37px;
+    font-weight: lighter;
+}
+.heroBanner .specialisation p{
+    color: white;
+}
+.heroBanner .Description{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.heroBanner .Description p{
+    height: 100px;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.753);
+    width: 70%;
+    margin-top: 20px;
+}
+
+/* End Hero Banner Style */
+.whatIdo {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    background-color: #272727;
+}
+
+.title {
+    /* background: brown; */
+    width: 100%;
+    height: 130px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 300;
+}
+.title h1{
+    font-weight: 300;
+    font-size: 30px;
+}
+.Content {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.whatIdo .Content .Card {
+    background: #FEDA4E;
+    width: 250px;
+    height: 340px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #222222;
+    transition: .5s;    
+    position:relative ;
+    top: 0px;
+}
+.whatIdo .Content .Card:hover {
+    animation: Floating infinite 2s;
+}
+
+@keyframes Floating {
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: -10px;
+
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+
+.whatIdo .Content .Card .cover {
+    /* background-color: crimson; */
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.whatIdo .Content .Card .cover img {
+    height: 100%;
+    width: 100%;
+}
+
+.whatIdo .Content .Card .skill h2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 55px;
+    /* background-color: darkcyan; */
+    font-size: 20px;
+}
+
+.whatIdo .Content .Card .desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.whatIdo .Content .Card .desc p {
+    /* background-color: #888; */
+    font-size: 14px;
+    margin: 12px;
+    height: 120px;
+}
+
+/* Projects Style */
+.Projects {
+    background-color: #202020;
+}
+
+/* About Style */
+.About{
+    color: white;
+}
+.About .Content .RightSec {
+    /* background-color: chartreuse; */
+    width: 438px;
+    height: 400px;
+}
+
+.About .Content .LeftSec {
+    /* background-color: rgb(255, 0, 0); */
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+}
+
+.About .Content .LeftSec .profileImage {
+    height: 130px;
+    width: 130px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.About .Content .LeftSec .profileImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.LeftSec .profileName h3 {
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.RightSec {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
+}
+
+.CloseTogether {
+    display: flex;
+    justify-content: center;
+}
+
+.LeftSec form {
+    display: flex;
+    flex-direction: column;
+}
+
+.LeftSec input {
+    background-color: #CECECE;
+    border: none;
+    width: calc(100%-20px);
+    height: 13px;
+    font-size: 13px;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.LeftSec button {
+    width: 40%;
+    height: 34px;
+    padding: 25px 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #FEDA4E;
+}
+
+textarea {
+    resize: none;
+}
+
+.inputMess {
+    background-color: #CECECE;
+    border: none;
+    padding: 20px 20px;
+    width: calc(100% - 40px);
+    height: 80px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.marg {
+    margin-bottom: 5px;
+}
+
+
+
+
+.SayHi{
+    background-color: #202020;
+}
+
+
+
+
+
+
+.Likefotter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.width {
+    padding: 40px;
+    width: 200px;
+    /* background-color: darkmagenta; */
+}
+
+.Likefotter a {
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.width h1 {
+    margin-bottom: 10px;
+}
+
+.whiteCol {
+    color: white;
+}
+
+.NameAndDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    place-items: center;
+}
+
+.pTowhite {
+    width: max-content;
+    font-size: 18px;
+    position: relative;
+    top: -15px;
+    transition: .7s;
+}
+
+.NameAndDesc:hover .pTowhite {
+    animation: toBottom .5s;
+    top: 0px;
+}
+
+@keyframes toBottom {
+    from {
+        top: -15px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
