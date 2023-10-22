@@ -1,20 +1,12 @@
 
 
-@media (max-width:341px)  { 
-    /* smartphones, iPhone, portrait 480x320 phones */ 
-
-    .About .RightSec p {
-        margin-bottom:20px ;
-    }
-    .About .Content .RightSec {
-        height: 300px;
-    }
-
-}
 
 @media (max-width:419px)  { 
     /* smartphones, iPhone, portrait 480x320 phones */ 
-
+    .Likefotter {
+        display: flex;
+        justify-content: center;
+    }
 
 
 }
@@ -54,10 +46,7 @@
     .About .Content .LeftSec {
         width: 470px;
     }
-    .Likefotter {
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }
+
     .RightSec {
         display: block;
     }
@@ -75,7 +64,7 @@
     }
 
     .Likefotter {
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .width {
@@ -148,6 +137,20 @@
     height: 100vh;
 
   }
+
+}
+@media (max-width:341px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+
+    .About .RightSec p {
+        margin-bottom:20px ;
+    }
+    .About .Content .RightSec {
+        height: 300px;
+    }
+    .About .Content .LeftSec {
+        width: 244px;
+    }
 
 }
 
