@@ -1,11 +1,24 @@
 
 
-@media (max-width:320px)  { 
+@media (max-width:341px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+
+    .About .RightSec p {
+        margin-bottom:20px ;
+    }
+    .About .Content .RightSec {
+        height: 300px;
+    }
+
+}
+
+@media (max-width:419px)  { 
     /* smartphones, iPhone, portrait 480x320 phones */ 
 
 
 
 }
+
 
 @media (max-width:481px)  { 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -54,7 +67,7 @@
     }
 
     .About .Content .RightSec {
-        height: 250px;
+        height: 300px;
     }
     .display{
         display: flex;
