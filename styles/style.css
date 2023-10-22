@@ -201,7 +201,7 @@ ul {
 .Content {
     display: flex;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 50px;
@@ -332,11 +332,13 @@ ul {
     justify-content: center;
 }
 
+
 .LeftSec form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    width: -webkit-fill-available;
 }
-
 .LeftSec input {
     background-color: #CECECE;
     border: none;

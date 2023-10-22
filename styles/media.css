@@ -37,7 +37,7 @@
 @media (max-width:1110px) {
     /* big landscape tablets, laptops, and desktops */ 
     .About .Content .LeftSec {
-        width: 100%;
+        width: 470px;
     }
     .Likefotter {
         justify-content: space-between;
