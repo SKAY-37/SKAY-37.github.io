@@ -42,7 +42,7 @@ a {
     justify-content: right;
     place-items: center;
     position: fixed;
-    z-index: 20;
+    z-index: 2;
     top: 0%;
 }
 #virtualUpBar .socialMedia{
@@ -126,6 +126,8 @@ ul {
     display: flex;
     justify-content: space-around;
     place-items: center;
+    z-index: 3;
+    position: relative;
 }
 
 .upbar .listMenu ul {
@@ -237,6 +239,8 @@ ul {
     display: flex;
     justify-content: center;
     background-color: #272727;
+    position: relative;
+    z-index: 1;
 }
 
 .title {
