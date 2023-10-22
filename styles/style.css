@@ -503,3 +503,13 @@ textarea {
         top: 0px;
     }
 }
+
+footer{
+    background-color: #202020;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    place-items:center ;
+    color: white;
+    font-size: 13px;
+}

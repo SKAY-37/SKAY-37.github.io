@@ -137,6 +137,9 @@
     height: 100vh;
 
   }
+footer{
+    font-size: 10px;
+}
 
 }
 @media (max-width:341px)  { 
@@ -151,6 +154,9 @@
     .About .Content .LeftSec {
         width: 244px;
     }
-
+footer{
+    font-size: 9px;
+    height: 30px;
+}
 }
 
