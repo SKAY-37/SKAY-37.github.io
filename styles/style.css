@@ -153,6 +153,14 @@ ul {
     font-size: 40px;
 }
 
+
+.Widss{
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+
 .heroBanner .specialisation {
     text-align: center;
     font-size: 29px;

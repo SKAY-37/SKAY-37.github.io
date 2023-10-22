@@ -115,12 +115,26 @@
 
 
 @media (max-width:555px) {
-  .socialMedia{
+  .upbar .Grid .socialMedia{
+    display: none;
+  }
+  .logo{
     display: none;
   }
   .Grid {
 
     justify-content: center;
   }
+  .Widss{
+    display: flex;
+}
+.upbar{
+    display: none;
+}
+.heroBanner {
+    height: 100vh;
+
+  }
+
 }
 
