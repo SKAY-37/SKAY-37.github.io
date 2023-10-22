@@ -68,6 +68,9 @@
     .width {
         width: 100%;
     }
+    .listMenu{
+        display: none;
+    }
 
 }
 
@@ -108,5 +111,16 @@
     .heroBanner .Description p {
         font-size: 10px;
     }
+}
+
+
+@media (max-width:555px) {
+  .socialMedia{
+    display: none;
+  }
+  .Grid {
+
+    justify-content: center;
+  }
 }
 
