@@ -458,7 +458,7 @@ textarea {
 
 .width {
     padding: 40px;
-    width: 200px;
+    width: auto;
     /* background-color: darkmagenta; */
 }
 
@@ -492,6 +492,10 @@ textarea {
 .NameAndDesc:hover .pTowhite {
     animation: toBottom .5s;
     top: 0px;
+}
+.pages a:hover{
+    color: #FEDA4E;
+
 }
 
 @keyframes toBottom {
