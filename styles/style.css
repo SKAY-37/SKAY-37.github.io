@@ -155,8 +155,9 @@ ul {
 
 .heroBanner .specialisation {
     text-align: center;
-    font-size: 37px;
+    font-size: 29px;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
 .heroBanner .specialisation p{
     color: white;
@@ -247,6 +248,7 @@ ul {
     padding: 10px;
     overflow: hidden;
     border-radius: 5px;
+    pointer-events: none;
 }
 
 .whatIdo .Content .Card .cover img {
@@ -310,6 +312,7 @@ ul {
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
     overflow: hidden;
+    pointer-events: none;
 }
 .About .Content .LeftSec .profileImage img{
     width: 100%;

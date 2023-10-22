@@ -21,7 +21,9 @@
 
 @media (max-width:961px)  { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-
+    .heroBanner .Description p {
+        width: 100%;
+    }
 }
 
 
@@ -79,35 +81,32 @@
 
 
 
-@media (max-width:923px) {
+@media (max-width:680px) {
     /* big landscape tablets, laptops, and desktops */ 
-    /* .RightSec {
-        display: block;
+    .heroBanner .specialisation {
+        font-size: 24px;
+        margin-bottom: 20px;
     }
-    .RightSec p{
-        text-align: center;
+    .heroBanner .name{
+        font-size: 34px;
     }
-
-    .About .Content .RightSec {
-        height: 250px;
-    }
-    .display{
-        display: flex;
-        margin-top: 75px;
+    .heroBanner .Description p {
+        font-size: 13px;
     }
 
-    .Likefotter {
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .width {
-        width: 100%;
-    } */
 }
 
 
-@media (max-width:1281px) {
-    /* hi-res laptops and desktops */ 
-
+@media (max-width:398px) {
+    .heroBanner .specialisation {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .heroBanner .name{
+        font-size: 26px;
+    }
+    .heroBanner .Description p {
+        font-size: 10px;
+    }
 }
 
