@@ -37,13 +37,35 @@
 @media (max-width:1110px) {
     /* big landscape tablets, laptops, and desktops */ 
     .About .Content .LeftSec {
-        width: 300px;
+        width: 100%;
     }
     .Likefotter {
         justify-content: space-between;
         flex-wrap: nowrap;
     }
+    .RightSec {
+        display: block;
+    }
+    .RightSec p{
+        padding: 0%;
+        text-align: center;
+    }
 
+    .About .Content .RightSec {
+        height: 250px;
+    }
+    .display{
+        display: flex;
+        margin-top: 75px;
+    }
+
+    .Likefotter {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .width {
+        width: 100%;
+    }
 
 }
 
@@ -59,7 +81,7 @@
 
 @media (max-width:923px) {
     /* big landscape tablets, laptops, and desktops */ 
-    .RightSec {
+    /* .RightSec {
         display: block;
     }
     .RightSec p{
@@ -80,7 +102,7 @@
     }
     .width {
         width: 100%;
-    }
+    } */
 }
 
 
