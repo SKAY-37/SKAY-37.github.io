@@ -12,6 +12,51 @@ a {
     text-decoration: none;
     color: white;
 }
+
+@keyframes socialMediaLanding1 {
+    from{
+        top: -100px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
+@keyframes socialMediaLanding2 {
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+    to{
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+
+
+#virtualUpBar{
+    height: 100px;
+    width: 100%;
+    display: none;
+    justify-content: right;
+    place-items: center;
+    position: fixed;
+    z-index: 20;
+}
+#virtualUpBar .socialMedia{
+    padding-right: 20px;
+}
+
+#virtualUpBar .socialMedia ul a{
+    background-color: rgb(26, 26, 26);
+    border-radius:50% ;
+    margin-left: 10px;
+}
+
+
+
+
 .display p{
     padding: 0px 50px 0px 0px;
 }
