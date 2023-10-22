@@ -43,6 +43,7 @@ a {
     place-items: center;
     position: fixed;
     z-index: 20;
+    top: 0%;
 }
 #virtualUpBar .socialMedia{
     padding-right: 20px;
