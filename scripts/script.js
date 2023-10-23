@@ -10,7 +10,19 @@ function myFunction() {
     document.getElementById("virtualUpBar").style.opacity = "0";
 
   }
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    document.getElementById("heroBanner").style.opacity = "0";
+
+  } else {
+    document.getElementById("heroBanner").style.opacity = "1";
+  }
 }
+
+
+
+
+
+
 
 function loaded() {
     document.getElementById("Loading").style.transition =".5s"
