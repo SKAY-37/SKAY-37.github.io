@@ -11,3 +11,10 @@ function myFunction() {
 
   }
 }
+
+function loaded() {
+    document.getElementById("Loading").style.transition =".5s"
+    document.getElementById("Loading").style.opacity ="0"
+    document.getElementById("Loading").style.zIndex ="-60"
+    document.getElementById("heights").style.height ="auto"
+}
