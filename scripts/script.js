@@ -30,3 +30,22 @@ function loaded() {
     document.getElementById("Loading").style.zIndex ="-60"
     document.getElementById("heights").style.height ="auto"
 }
+
+var icon = document.getElementsByTagName("link")
+var iconType = "light"
+icon[0].href = "images/FavIcon.svg"
+  setInterval(()=>{
+    if (iconType === "light") {
+      icon[0].href = "images/lightIcon.svg"
+      iconType = "dark"
+      
+    }else{
+      icon[0].href = "images/FavIcon.svg"
+      iconType = "light"
+
+    }
+    console.log("hello")
+  },1000)
+ 
+
+ 
