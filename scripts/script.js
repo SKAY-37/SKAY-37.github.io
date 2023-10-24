@@ -31,21 +31,59 @@ function loaded() {
     document.getElementById("heights").style.height ="auto"
 }
 
-var icon = document.getElementsByTagName("link")
-var iconType = "light"
-icon[0].href = "images/FavIcon.svg"
-  setInterval(()=>{
-    if (iconType === "light") {
-      icon[0].href = "images/lightIcon.svg"
-      iconType = "dark"
+// var icon = document.getElementsByTagName("link")
+// var iconType = "light"
+// icon[0].href = "images/FavIcon.svg"
+//   setInterval(()=>{
+//     if (iconType === "light") {
+//       icon[0].href = "images/lightIcon.svg"
+//       iconType = "dark"
       
-    }else{
-      icon[0].href = "images/FavIcon.svg"
-      iconType = "light"
+//     }else{
+//       icon[0].href = "images/FavIcon.svg"
+//       iconType = "light"
 
-    }
-    console.log("hello")
-  },1000)
+//     }
+//   },1000)
  
+// Send Sms
+ 
+  let tg = {
+    token: "6977486939:AAECweAevjUTbIbfK1R7AEDZ1DZgjS_puz4", // Your bot's token that got from @BotFather
+    chat_id: "5167299841" // The user's(that you want to send a message) telegram chat id
 
- 
+}
+
+/**
+ * By calling this function you can send message to a specific user()
+ * @param {String} the text to send
+ *
+*/
+function sendMessage(text)
+{
+    const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${tg.chat_id}&text=${text}`; // The url to request
+    // const url = `https://api.telegram.org/bot${tg.token}/sendPhoto?chat_id=${tg.chat_id}&photo=${text}`; // The url to request
+    const xht = new XMLHttpRequest();
+    xht.open("GET", url);
+    xht.send();
+}
+
+// Now you can send any text(even a form data) by calling sendMessage function.
+// For example if you want to send the 'hello', you can call that function like this:
+
+
+document.getElementById("send").onclick = () =>{
+  var name = document.getElementById("name").value
+  var email = document.getElementById("email").value
+  var message = document.getElementById("message").value
+  var ThereName = document.getElementById("ThereName")
+  var form = document.getElementById("form")
+  var finallyMessage = document.getElementById("finallyMessage");
+  ThereName.innerText = name
+  form.style.display = "none"
+  finallyMessage.style.display = "block"
+  let mess = `New Message :%0A_____________________%0AName    : ${name} ,%0AEmail   : ${email} ,%0AMessage : ${message} ;`
+  sendMessage(mess);
+
+  
+}
