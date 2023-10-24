@@ -99,6 +99,9 @@
     .heroBanner .Description p {
         font-size: 10px;
     }
+    .AlertMesssage {
+        font-size: 0.5rem;
+      }
 }
 
 
@@ -167,6 +170,9 @@ footer{
     font-size: 12px;
 }
 .done{
-    font-size: 25px;
+    /* font-size: 25px; */
 }
+.AlertMesssage {
+    font-size: 0.7rem;
+  }
 }

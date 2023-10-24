@@ -482,8 +482,18 @@ textarea {
 
 
 .done{
-    color: green;
-    font-size: 50px;
+    color: #FEDA4E;
+    font-size:100px;
+    width: 100%;
+    text-align: center;
+}
+#ThereName{
+    color: #FEDA4E;
+}
+.AlertMesssage{
+    font-size: small;
+    color: #fedb4e70;
+    color: #cecece7a;
 }
 
 .Likefotter {
@@ -499,7 +509,7 @@ textarea {
 }
 
 .Likefotter a {
-    color: rgba(255, 255, 255, 0.555);
+    color: #ffffff8e;
 }
 
 .width h1 {

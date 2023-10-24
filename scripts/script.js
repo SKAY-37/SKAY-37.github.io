@@ -66,24 +66,45 @@ function sendMessage(text)
     const xht = new XMLHttpRequest();
     xht.open("GET", url);
     xht.send();
+    // localStorage.setItem("TetsMess", "true");
 }
 
 // Now you can send any text(even a form data) by calling sendMessage function.
 // For example if you want to send the 'hello', you can call that function like this:
-
-
+// var Send = localStorage.getItem("TetsMess");
+// console.log("Test Message is : "+ Send)
+// if (Send === "true") {
+// var sayHi = document.getElementById("SayHi");
+// var About = document.getElementById("About");
+// var fotter = document.getElementById("fotter");
+//     sayHi.style.display = "none"
+//     About.style.backgroundColor = "#202020"
+//     fotter.style.backgroundColor ="#272727"
+// }else{
+//   sayHi.style.display = "flex"
+//     About.style.backgroundColor = "#272727"
+//     fotter.style.backgroundColor ="#202020"
+// }
 document.getElementById("send").onclick = () =>{
-  var name = document.getElementById("name").value
-  var email = document.getElementById("email").value
-  var message = document.getElementById("message").value
-  var ThereName = document.getElementById("ThereName")
-  var form = document.getElementById("form")
-  var finallyMessage = document.getElementById("finallyMessage");
-  ThereName.innerText = name
-  form.style.display = "none"
-  finallyMessage.style.display = "block"
-  let mess = `New Message :%0A_____________________%0AName    : ${name} ,%0AEmail   : ${email} ,%0AMessage : ${message} ;`
-  sendMessage(mess);
+  // if (Send != "true") {
+    var name = document.getElementById("name").value
+    var email = document.getElementById("email").value
+    var message = document.getElementById("message").value
+    var ThereName = document.getElementById("ThereName")
+    var form = document.getElementById("form")
+    var finallyMessage = document.getElementById("finallyMessage");
+    ThereName.innerText = name
+    form.style.display = "none"
+    finallyMessage.style.display = "block"
+    let mess = `New Message :%0A_____________________%0AName    : ${name} ,%0AEmail   : ${email} ,%0AMessage : ${message} ;`
+    sendMessage(mess);
+    
+  // }
+  // else {
+    
+  //   console.log("its not")
+  // }
+  
 
   
 }

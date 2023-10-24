@@ -237,7 +237,7 @@
         <!-- End Projects -->
 
         <!-- Start About -->
-        <section class="whatIdo About">
+        <section class="whatIdo About" >
             <div class="HeroBannerGrid">
                 <div class="title">
                     <h1>About</h1>
@@ -282,7 +282,7 @@
         <!-- End About -->
 
         <!-- Start Form -->
-        <section class="whatIdo About SayHi">
+        <section class="whatIdo About SayHi" id="SayHi">
             <div class="HeroBannerGrid">
                 <div class="title">
                     <h1>Say Hi !</h1>
@@ -297,14 +297,18 @@
                             <input required class="inputName marg" id="name" type="text" placeholder="Name">
                             <input required class="inputEmail marg" name="email" id="email" type="text" placeholder="Email">
                             <textarea required class="inputMess marg" id="message" name="" placeholder="Message" id="" cols="30" rows="4"></textarea>
+                            <p class="AlertMesssage">You Have One Message , One Chance , Exploit it !</p>
                             <input  type="button" id="send" value="Send">
                         </form>
                         <div class="HiDone" id="finallyMessage">
-                            <h1 style="text-align: center;">Thank You <span id="ThereName"></span>,</h1>
+                            <span style=""  class="material-symbols-outlined done"> done</span>
+                            <h1 style="text-align: center;">Thank You <span id="ThereName"></span> ,</h1>
                             <h1 style="display: flex; justify-content: center;place-items: center;">You Just Said Hi ! 
-                                <span style=""  class="material-symbols-outlined done"> done</span>
                             </h1>
                         </div>
+                        <!-- <div class="alertSendMessage">
+                            <h1>You already Said Hi To me</h1>
+                        </div> -->
                     </div>
                     
                 </div>
@@ -312,7 +316,7 @@
         </section>
         <!-- End Form -->
         <!-- Start Like Fotter  -->
-        <section class="whatIdo">
+        <section class="whatIdo" id="About">
             <div class="HeroBannerGrid ">
                 <div class="Likefotter ">
 
@@ -358,7 +362,7 @@
 
             </div>
         </section>
-        <footer>
+        <footer id="fotter">
             <p>Copyright 2023 Jawad Boulmal . all right are reserved</p>
         </footer>
         <!-- End Like Fotter  -->
