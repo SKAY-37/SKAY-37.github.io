@@ -75,7 +75,7 @@ function sendMessage(text,name)
 var Send = localStorage.getItem("TetsMess");
 var namex = localStorage.getItem("name");
 // console.log("Test Message is : "+ Send)
-if (Send === "true") {
+if (Send === "true"){
 // var sayHi = document.getElementById("SayHi");
 // var About = document.getElementById("About");
 // var fotter = document.getElementById("fotter");
