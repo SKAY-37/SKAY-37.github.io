@@ -451,7 +451,7 @@ ul {
     border: none;
     border-radius: 5px;
     background-color: #FEDA4E;
-}
+}   
 
 textarea {
     resize: none;
@@ -481,7 +481,10 @@ textarea {
 
 
 
-
+.done{
+    color: green;
+    font-size: 50px;
+}
 
 .Likefotter {
     display: flex;

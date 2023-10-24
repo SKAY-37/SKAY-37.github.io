@@ -163,5 +163,10 @@ footer{
     #Loading h1{
         font-size:16px ;
     }
-
+.HiDone{
+    font-size: 12px;
+}
+.done{
+    font-size: 25px;
+}
 }
