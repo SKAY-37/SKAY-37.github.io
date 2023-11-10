@@ -37,6 +37,9 @@
 body{
     background-color: #202020;
 }
+html{
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
     color: white;
@@ -61,7 +64,31 @@ a {
         opacity: 0;
     }
 }
+@keyframes Dandinition {
+    from{
+        position: relative;
+        left: -200px;
+        opacity: 0;
+    }
+    to{
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
 
+@keyframes Fandinition {
+    from{
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+    to{
+        position: relative;
+        left: -200px;
+        opacity: 0;
+    }
+}
 
 
 #virtualUpBar{
@@ -354,11 +381,31 @@ ul {
 }
 
 .whatIdo .Content .Card .desc {
-    display: -webkit-box;
+    /* display: -webkit-box; */
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    overflow: scroll;
     height: 100px;
+  overflow-x: hidden;
+  scrollbar-color: #fedb4e60 #272727;
+}
+.whatIdo .Content .Card .desc::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.whatIdo .Content .Card .desc::-webkit-scrollbar-track {
+    background: #272727;
+}
+
+/* Handle */
+.whatIdo .Content .Card .desc::-webkit-scrollbar-thumb {
+    background: #fedb4e60;
+}
+
+/* Handle on hover */
+.whatIdo .Content .Card .desc::-webkit-scrollbar-thumb:hover {
+    background: #fedb4ed3;
 }
 
 .whatIdo .Content .Card .desc p {

@@ -20,10 +20,11 @@
     <meta name="theme-color" content="#202020" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/jquery.min.js"></script>
     <title>Jawad Boulmal</title>
 </head>
 <body onload="loaded()">
-    <div  id="Loading">
+    <div id="Loading">
         <img src="images/3f3a3831234507.564a1d2338123.gif" alt="">
         <h1>Something Great Is Loading For You !</h1>
     </div>
@@ -38,28 +39,28 @@
                 <!-- List Menu -->
                 <div class="listMenu">
                     <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Projects</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Contact</li></a>
+                        <a href="#Home"><li>Home</li></a>
+                        <a href="#Projects"><li>Projects</li></a>
+                        <a href="#About"><li>About</li></a>
+                        <a href="#SayHi"><li>Contact</li></a>
                     </ul>
                 </div>
                 <!-- Social Media Links -->
                 <div class="socialMedia">
                     <ul>
-                        <a href="https://www.instagram.com/skay37_"><li>
+                        <a href="https://www.instagram.com/skay37_" target="_blank"><li>
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.6668 5.66684H11.3335C8.20389 5.66684 5.66684 8.20389 5.66684 11.3335V22.6668C5.66684 25.7965 8.20389 28.3335 11.3335 28.3335H22.6668C25.7965 28.3335 28.3335 25.7965 28.3335 22.6668V11.3335C28.3335 8.20389 25.7965 5.66684 22.6668 5.66684Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M17 21.25C19.3472 21.25 21.25 19.3472 21.25 17C21.25 14.6528 19.3472 12.75 17 12.75C14.6528 12.75 12.75 14.6528 12.75 17C12.75 19.3472 14.6528 21.25 17 21.25Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M23.375 10.625V10.6274" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                                
                         </li></a>
-                        <a href="https://github.com/Skayologie"><li>
+                        <a href="https://github.com/Skayologie" target="_blank"><li>
                             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.375 26.1252C6.4625 28.0502 6.4625 22.6877 4.125 22.0002M20.625 28.8752V24.0627C20.625 22.6877 20.7625 22.1377 19.9375 21.3127C23.7875 20.9002 27.5 19.3877 27.5 13.0627C27.4983 11.4195 26.8573 9.84151 25.7125 8.66271C26.2494 7.23541 26.2 5.6537 25.575 4.26271C25.575 4.26271 24.0625 3.85021 20.7625 6.05021C17.9675 5.32227 15.0325 5.32227 12.2375 6.05021C8.9375 3.85021 7.425 4.26271 7.425 4.26271C6.80004 5.6537 6.75061 7.23541 7.2875 8.66271C6.14275 9.84151 5.50167 11.4195 5.5 13.0627C5.5 19.3877 9.2125 20.9002 13.0625 21.3127C12.2375 22.1377 12.2375 22.9627 12.375 24.0627V28.8752" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </li></a>
-                        <a href="https://www.facebook.com/ASMMID"><li>
+                        <a href="https://www.facebook.com/ASMMID" target="_blank"><li>
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.91644 14.1667V19.8333H14.1664V29.75H19.8331V19.8333H24.0831L25.4998 14.1667H19.8331V11.3333C19.8331 10.9576 19.9824 10.5973 20.248 10.3316C20.5137 10.0659 20.874 9.91667 21.2498 9.91667H25.4998V4.25H21.2498C19.3712 4.25 17.5695 4.99628 16.2411 6.32466C14.9127 7.65304 14.1664 9.45472 14.1664 11.3333V14.1667H9.91644Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -72,19 +73,19 @@
         <div id="virtualUpBar">
             <div class="socialMedia">
                 <ul>
-                    <a href="https://www.instagram.com/skay37_/"><li>
+                    <a href="https://www.instagram.com/skay37_/" target="_blank"><li>
                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22.6668 5.66684H11.3335C8.20389 5.66684 5.66684 8.20389 5.66684 11.3335V22.6668C5.66684 25.7965 8.20389 28.3335 11.3335 28.3335H22.6668C25.7965 28.3335 28.3335 25.7965 28.3335 22.6668V11.3335C28.3335 8.20389 25.7965 5.66684 22.6668 5.66684Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17 21.25C19.3472 21.25 21.25 19.3472 21.25 17C21.25 14.6528 19.3472 12.75 17 12.75C14.6528 12.75 12.75 14.6528 12.75 17C12.75 19.3472 14.6528 21.25 17 21.25Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M23.375 10.625V10.6274" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                                
                     </li></a>
-                    <a href="https://github.com/Skayologie/"><li>
+                    <a href="https://github.com/Skayologie/" target="_blank"><li>
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.375 26.1252C6.4625 28.0502 6.4625 22.6877 4.125 22.0002M20.625 28.8752V24.0627C20.625 22.6877 20.7625 22.1377 19.9375 21.3127C23.7875 20.9002 27.5 19.3877 27.5 13.0627C27.4983 11.4195 26.8573 9.84151 25.7125 8.66271C26.2494 7.23541 26.2 5.6537 25.575 4.26271C25.575 4.26271 24.0625 3.85021 20.7625 6.05021C17.9675 5.32227 15.0325 5.32227 12.2375 6.05021C8.9375 3.85021 7.425 4.26271 7.425 4.26271C6.80004 5.6537 6.75061 7.23541 7.2875 8.66271C6.14275 9.84151 5.50167 11.4195 5.5 13.0627C5.5 19.3877 9.2125 20.9002 13.0625 21.3127C12.2375 22.1377 12.2375 22.9627 12.375 24.0627V28.8752" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </li></a>
-                    <a href="https://www.facebook.com/ASMMID"><li>
+                    <a href="https://www.facebook.com/ASMMID" target="_blank"><li>
                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.91644 14.1667V19.8333H14.1664V29.75H19.8331V19.8333H24.0831L25.4998 14.1667H19.8331V11.3333C19.8331 10.9576 19.9824 10.5973 20.248 10.3316C20.5137 10.0659 20.874 9.91667 21.2498 9.91667H25.4998V4.25H21.2498C19.3712 4.25 17.5695 4.99628 16.2411 6.32466C14.9127 7.65304 14.1664 9.45472 14.1664 11.3333V14.1667H9.91644Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -106,19 +107,19 @@
                 <!-- Social Media Links -->
                 <div class="socialMedia Widss">
                     <ul>
-                        <a href="https://www.instagram.com/skay37_/"><li>
+                        <a href="https://www.instagram.com/skay37_/" target="_blank"><li>
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.6668 5.66684H11.3335C8.20389 5.66684 5.66684 8.20389 5.66684 11.3335V22.6668C5.66684 25.7965 8.20389 28.3335 11.3335 28.3335H22.6668C25.7965 28.3335 28.3335 25.7965 28.3335 22.6668V11.3335C28.3335 8.20389 25.7965 5.66684 22.6668 5.66684Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M17 21.25C19.3472 21.25 21.25 19.3472 21.25 17C21.25 14.6528 19.3472 12.75 17 12.75C14.6528 12.75 12.75 14.6528 12.75 17C12.75 19.3472 14.6528 21.25 17 21.25Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M23.375 10.625V10.6274" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                                
                         </li></a>
-                        <a href="https://github.com/Skayologie/"><li>
+                        <a href="https://github.com/Skayologie/" target="_blank"><li>
                             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.375 26.1252C6.4625 28.0502 6.4625 22.6877 4.125 22.0002M20.625 28.8752V24.0627C20.625 22.6877 20.7625 22.1377 19.9375 21.3127C23.7875 20.9002 27.5 19.3877 27.5 13.0627C27.4983 11.4195 26.8573 9.84151 25.7125 8.66271C26.2494 7.23541 26.2 5.6537 25.575 4.26271C25.575 4.26271 24.0625 3.85021 20.7625 6.05021C17.9675 5.32227 15.0325 5.32227 12.2375 6.05021C8.9375 3.85021 7.425 4.26271 7.425 4.26271C6.80004 5.6537 6.75061 7.23541 7.2875 8.66271C6.14275 9.84151 5.50167 11.4195 5.5 13.0627C5.5 19.3877 9.2125 20.9002 13.0625 21.3127C12.2375 22.1377 12.2375 22.9627 12.375 24.0627V28.8752" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </li></a>
-                        <a href="https://www.facebook.com/ASMMID"><li>
+                        <a href="https://www.facebook.com/ASMMID" target="_blank"><li>
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.91644 14.1667V19.8333H14.1664V29.75H19.8331V19.8333H24.0831L25.4998 14.1667H19.8331V11.3333C19.8331 10.9576 19.9824 10.5973 20.248 10.3316C20.5137 10.0659 20.874 9.91667 21.2498 9.91667H25.4998V4.25H21.2498C19.3712 4.25 17.5695 4.99628 16.2411 6.32466C14.9127 7.65304 14.1664 9.45472 14.1664 11.3333V14.1667H9.91644Z" stroke="#FEDA4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -126,29 +127,36 @@
                     </ul>
                 </div>
                 <div class="Description">
-                    <p>I’am Jawad From Morocco , Designer Websites have two years of expreince in graphic designing and websites designing And I am a web developer Frontand & backand development i have 5 years of exprience ...</p>
+                    <!-- <p>Hello there! 👋 I'm Jawad Boulmal, a passionate web developer with a keen interest in creating innovative web solutions. With a strong foundation in web technologies, I love turning creative ideas into functional and user-friendly websites and web applications. My journey in the world of web development is reflected through the diverse projects you'll find in this repository.</p> -->
+                    <p>Hi, I'm Jawad Boulmal, a skilled web developer proficient in HTML, CSS, JavaScript, PHP, MySQL, jQuery, Bootstrap, and Laravel. I specialize in creating interactive and user-friendly websites. Let's work together to bring your digital ideas to life! 😊</p>
                 </div>
             </div>
         </section>
         <!-- End Hero Bar -->
 
         <!-- What I do -->
-        <section class="whatIdo">
-            <div class="HeroBannerGrid">
-                <div class="title">
-                    <h1>What I Do ?</h1>
+        <section  id="Home" class="whatIdo">
+            <div style="opacity: 0;" id="whatIdo" class="HeroBannerGrid">
+                <div class="title"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                    <h1 >What I Do ?</h1>
                 </div>
+         
                 <div class="Content CloseTogether">
+                    <div style="width: 90%; color:white;text-align: center;padding: 40px;">
+                        <p>
+                            I excel in both frontend and backend development, seamlessly integrating UI/UX design. I create responsive websites that not only look visually appealing but also function flawlessly on diverse devices. Whether you require a dynamic e-commerce platform, a captivating portfolio site, or a user-friendly web application, I have the expertise to bring your vision to life with a perfect blend of design and functionality.
+                        </p>
+                    </div>
                     <!-- Start Card -->
-                    <div class="Card">
+                    <div id="card" class="Card">
                         <div class="cover">
                             <img src="images/Web Developer.svg" alt="">
                         </div>
                         <div class="skill">
                             <H2>Web Development</H2>
                         </div>
-                        <div class="desc">
-                            <p>Pharetra lobortis condimentum faucibus tincidunt laoreet lacus mauris bibendum tortor. Id gravida a convallis id cursus venenatis lorem.</p>
+                        <div id="scrol" class="desc">
+                            <p>I create immersive digital experiences, crafting visually appealing and highly functional websites using HTML, CSS, and JavaScript. My passion lies in bringing creative designs to life, ensuring seamless user interactions and responsive layouts.</p>
                         </div>
                     </div>
                     <!-- End Card -->
@@ -161,7 +169,7 @@
                             <H2>Backend Dev</H2>
                         </div>
                         <div class="desc">
-                            <p>Pharetra lobortis condimentum faucibus tincidunt laoreet lacus mauris bibendum tortor. Id gravida a convallis id cursus venenatis lorem.</p>
+                            <p>As a backend developer, I architect robust server-side applications and databases, optimizing performance and enhancing security. My expertise lies in designing efficient algorithms, ensuring scalability, and building the backbone of successful online ventures.</p>
                         </div>
                     </div>
                     <!-- End Card -->
@@ -174,7 +182,7 @@
                             <H2>Ui Design</H2>
                         </div>
                         <div class="desc">
-                            <p>Pharetra HHHdhdhhdhdh hdhdhdh hdhdhdh lobortis condimentum faucibus tincidunt laoreet lacus mauris bibendum tortor. Id gravida a convallis id cursus venenatis lorem.</p>
+                            <p>In the realm of UI design, I transform ideas into visually stunning and intuitive interfaces, prioritizing simplicity and functionality. I blend creativity with user-centric principles, shaping interfaces that captivate users and guide them effortlessly through digital spaces.</p>
                         </div>
                     </div>
                     <!-- End Card -->
@@ -185,8 +193,8 @@
         <!-- End What I Do -->
 
         <!-- Start Projects -->
-        <section class="whatIdo Projects ">
-            <div class="HeroBannerGrid">
+        <section id="Projects" class="whatIdo Projects ">
+            <div id="ProjectsS" class="HeroBannerGrid">
                 <div class="title">
                     <h1>Projects</h1>
                 </div>
@@ -200,7 +208,7 @@
                             <H2><a style="color: black;" href="#">Shraflix</a></H2>
                         </div>
                         <div class="desc">
-                            <p>Pharetra lobortis condimentum faucibus tincidunt laoreet lacus mauris bibendum tortor. Id gravida a convallis id cursus venenatis lorem.</p>
+                            <p>Shraflix is my innovative take on a streaming platform, offering a rich user experience akin to Netflix. With intuitive navigation, visually appealing layouts, and seamless video playback, Shraflix provides users with a captivating entertainment hub. I designed and developed this platform, ensuring a user-friendly interface and a wide array of multimedia content, making it an ideal choice for movie enthusiasts.</p>
                         </div>
                     </div>
                     <!-- End Card -->
@@ -213,7 +221,7 @@
                             <H2><a style="color: black;" href="#">Natijati</a></H2>
                         </div>
                         <div class="desc">
-                            <p>Its For calculate your notes in every semester</p>
+                            <p>My Semester Sum Calculator website simplifies academic complexities by swiftly calculating the sum of all semesters. Through intuitive input fields and efficient algorithms, this tool automates the process, providing students with instant and accurate results. Its user-friendly design and precise calculations make it an indispensable resource for students, aiding them in tracking their academic progress effortlessly.</p>
                         </div>
                     </div>
                     <!-- End Card -->
@@ -226,7 +234,7 @@
                             <H2><a style="color: black;" href="#">Scams</a></H2>
                         </div>
                         <div class="desc">
-                            <p>Pharetra HHHdhdhhdhdh hdhdhdh hdhdhdh lobortis condimentum faucibus tincidunt laoreet lacus mauris bibendum tortor. Id gravida a convallis id cursus venenatis lorem.</p>
+                            <p>The Scam Awareness website is a comprehensive resource dedicated to educating users about online scams and frauds. I developed this platform to raise awareness and provide essential information on recognizing, avoiding, and reporting scams. With interactive guides, real-life examples, and up-to-date scam alerts, the website equips users with knowledge and tools to protect themselves online, fostering a safer digital environment for everyone.The Scam Awareness website is a comprehensive resource dedicated to educating users about online scams and frauds. I developed this platform to raise awareness and provide essential information on recognizing, avoiding, and reporting scams. With interactive guides, real-life examples, and up-to-date scam alerts, the website equips users with knowledge and tools to protect themselves online, fostering a safer digital environment for everyone.</p>
                         </div>
                     </div>
                     <!-- End Card -->
@@ -238,10 +246,10 @@
         <!-- End Projects -->
 
         <!-- Start About -->
-        <section class="whatIdo About" >
-            <div class="HeroBannerGrid">
+        <section id="About" class="whatIdo About" >
+            <div  id="AboutS" class="HeroBannerGrid">
                 <div class="title">
-                    <h1>About</h1>
+                    <h1>Why Choose Me</h1>
                 </div>
                 <div class="Content CloseTogether">
                     <div class="LeftSec">
@@ -253,19 +261,19 @@
                         </div>
                         <div class="socialMedia">
                             <ul>
-                                <a href="#"><li>
+                                <a href="https://www.instagram.com/skay37_" target="_blank"><li>
                                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M22.6668 5.66684H11.3335C8.20389 5.66684 5.66684 8.20389 5.66684 11.3335V22.6668C5.66684 25.7965 8.20389 28.3335 11.3335 28.3335H22.6668C25.7965 28.3335 28.3335 25.7965 28.3335 22.6668V11.3335C28.3335 8.20389 25.7965 5.66684 22.6668 5.66684Z" stroke="White" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M17 21.25C19.3472 21.25 21.25 19.3472 21.25 17C21.25 14.6528 19.3472 12.75 17 12.75C14.6528 12.75 12.75 14.6528 12.75 17C12.75 19.3472 14.6528 21.25 17 21.25Z" stroke="White" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M23.375 10.625V10.6274" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>                                
                                 </li></a>
-                                <a href="#"><li>
+                                <a href="https://github.com/Skayologie" target="_blank"><li>
                                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.375 26.1252C6.4625 28.0502 6.4625 22.6877 4.125 22.0002M20.625 28.8752V24.0627C20.625 22.6877 20.7625 22.1377 19.9375 21.3127C23.7875 20.9002 27.5 19.3877 27.5 13.0627C27.4983 11.4195 26.8573 9.84151 25.7125 8.66271C26.2494 7.23541 26.2 5.6537 25.575 4.26271C25.575 4.26271 24.0625 3.85021 20.7625 6.05021C17.9675 5.32227 15.0325 5.32227 12.2375 6.05021C8.9375 3.85021 7.425 4.26271 7.425 4.26271C6.80004 5.6537 6.75061 7.23541 7.2875 8.66271C6.14275 9.84151 5.50167 11.4195 5.5 13.0627C5.5 19.3877 9.2125 20.9002 13.0625 21.3127C12.2375 22.1377 12.2375 22.9627 12.375 24.0627V28.8752" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </li></a>
-                                <a href="#"><li>
+                                <a href="https://www.facebook.com/ASMMID" target="_blank"><li>
                                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.91644 14.1667V19.8333H14.1664V29.75H19.8331V19.8333H24.0831L25.4998 14.1667H19.8331V11.3333C19.8331 10.9576 19.9824 10.5973 20.248 10.3316C20.5137 10.0659 20.874 9.91667 21.2498 9.91667H25.4998V4.25H21.2498C19.3712 4.25 17.5695 4.99628 16.2411 6.32466C14.9127 7.65304 14.1664 9.45472 14.1664 11.3333V14.1667H9.91644Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -274,8 +282,9 @@
                         </div>
                     </div>
                     <div class="RightSec">
-                        <p>Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.
-                            Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.</p>
+                        <p>
+                            I believe in the power of collaboration and open communication. I work closely with my clients to understand their goals and preferences, ensuring that every project reflects their unique identity. By staying updated with the latest industry trends and technologies, I deliver cutting-edge solutions that leave a lasting impression.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -284,22 +293,23 @@
 
         <!-- Start Form -->
         <section class="whatIdo About SayHi" id="SayHi">
-            <div class="HeroBannerGrid">
+            <div id="SayHiS" class="HeroBannerGrid">
                 <div class="title">
                     <h1>Say Hi !</h1>
                 </div>
                 <div class="Content CloseTogether">
-                    <div class="RightSec display" style="width: 390px;margin-top: 10px;">
-                        <p>Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.
-                            Nisl non neque et sit in. Nisl porttitor ultricies dui elit. Non gravida velit mollis hac lectus quis mattis.</p>
+                    <div class="RightSec display" style="width: 390px;">
+                        <p>Hey there!<br><br>
+                        I'm Jawad Boulmal, your friendly web developer. Whether you're a business owner or a creative mind with a unique project, I'm here to bring your ideas to life. Explore my portfolio, and if you're ready to dive in or have any questions, shoot me a message! Let's make your digital dreams a reality! 😊</p>
                     </div>
                     <div class="LeftSec media1145" >
                        <form action="" id="form" name="form1" >
                             <input required class="inputName marg" id="name" type="text" placeholder="Name">
-                            <input required class="inputEmail marg" name="email" id="email" type="email" placeholder="Email">
+                            <input  class="inputEmail marg" name="email" id="email" type="" placeholder="Email">
+                            <span class="AlertMesssage" style=" color: rgb(185, 9, 9);" id="EmailErr"></span>
                             <textarea required class="inputMess marg" id="message" name="" placeholder="Message" id="" cols="30" rows="4"></textarea>
-                            <p class="AlertMesssage">You Have One Message , One Chance , Exploit it !</p>
-                            <input  type="button" id="send" value="Send">
+                            <p class="AlertMesssage">please don't hesitate to Say Hi to me !</p>
+                            <input onclick="" type="button" id="send" value="Send">
                         </form>
                         <div class="HiDone" id="finallyMessage">
                             <span class="material-symbols-outlined done"> done</span>
@@ -318,7 +328,7 @@
         <!-- End Form -->
         <!-- Start Like Fotter  -->
         <section class="whatIdo" id="About">
-            <div class="HeroBannerGrid ">
+            <div id="Fotter" class="HeroBannerGrid ">
                 <div class="Likefotter ">
 
                     <div class="NameAndDesc width whiteCol">
@@ -331,19 +341,19 @@
                         <p>Morocco , CA</p>
                         <div class="socialMedia">
                             <ul>
-                                <a class="instagram" href="#"><li>
+                                <a class="instagram" href="https://www.instagram.com/skay37_/" target="_blank"><li>
                                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M22.6668 5.66684H11.3335C8.20389 5.66684 5.66684 8.20389 5.66684 11.3335V22.6668C5.66684 25.7965 8.20389 28.3335 11.3335 28.3335H22.6668C25.7965 28.3335 28.3335 25.7965 28.3335 22.6668V11.3335C28.3335 8.20389 25.7965 5.66684 22.6668 5.66684Z" stroke="White" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M17 21.25C19.3472 21.25 21.25 19.3472 21.25 17C21.25 14.6528 19.3472 12.75 17 12.75C14.6528 12.75 12.75 14.6528 12.75 17C12.75 19.3472 14.6528 21.25 17 21.25Z" stroke="White" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M23.375 10.625V10.6274" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>                                
                                 </li></a>
-                                <a class="github" href="#"><li>
+                                <a class="github" href="https://github.com/Skayologie/" target="_blank"><li>
                                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.375 26.1252C6.4625 28.0502 6.4625 22.6877 4.125 22.0002M20.625 28.8752V24.0627C20.625 22.6877 20.7625 22.1377 19.9375 21.3127C23.7875 20.9002 27.5 19.3877 27.5 13.0627C27.4983 11.4195 26.8573 9.84151 25.7125 8.66271C26.2494 7.23541 26.2 5.6537 25.575 4.26271C25.575 4.26271 24.0625 3.85021 20.7625 6.05021C17.9675 5.32227 15.0325 5.32227 12.2375 6.05021C8.9375 3.85021 7.425 4.26271 7.425 4.26271C6.80004 5.6537 6.75061 7.23541 7.2875 8.66271C6.14275 9.84151 5.50167 11.4195 5.5 13.0627C5.5 19.3877 9.2125 20.9002 13.0625 21.3127C12.2375 22.1377 12.2375 22.9627 12.375 24.0627V28.8752" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </li></a>
-                                <a class="facebook" href="#"><li>
+                                <a class="facebook" href="https://www.facebook.com/ASMMID" target="_blank"><li>
                                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.91644 14.1667V19.8333H14.1664V29.75H19.8331V19.8333H24.0831L25.4998 14.1667H19.8331V11.3333C19.8331 10.9576 19.9824 10.5973 20.248 10.3316C20.5137 10.0659 20.874 9.91667 21.2498 9.91667H25.4998V4.25H21.2498C19.3712 4.25 17.5695 4.99628 16.2411 6.32466C14.9127 7.65304 14.1664 9.45472 14.1664 11.3333V14.1667H9.91644Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -354,10 +364,10 @@
                     </div>
                     <div class="pages width whiteCol">
                         <h1>Pages</h1>
-                        <a href="#"><p>Home</p></a>
-                        <a href="#"><p>Projects</p></a>
-                        <a href="#"><p>About</p></a>
-                        <a href="#"><p>Contact</p></a>
+                        <a href="#Home"><p>Home</p></a>
+                        <a href="#Projects"><p>Projects</p></a>
+                        <a href="#About"><p>About</p></a>
+                        <a href="#SayHi"><p>Contact</p></a>
                     </div>
                 </div>
 
@@ -369,5 +379,6 @@
         <!-- End Like Fotter  -->
     </div>
     <script src="scripts/script.js"></script>
+    <script src="scripts/controller.js"></script>
 </body>
 </html>
