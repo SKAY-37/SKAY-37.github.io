@@ -22,7 +22,7 @@ I'm always open to new web development opportunities, collaborations, and discus
 
 📫 How to Reach Me:
 
-    Email : jawadboulmal@skayologie.github.io [link](jawadboulmal@skayologie.github.io)
+    Email : jawadboulmal@skayologie.github.io 
     Facebook : www.facebook.com/ASMMID
     Portfolio Website : www.skayologie.github.io
 
