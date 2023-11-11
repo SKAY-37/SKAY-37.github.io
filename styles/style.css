@@ -388,6 +388,16 @@ ul {
     height: 100px;
   overflow-x: hidden;
   scrollbar-color: #fedb4e60 #272727;
+  mask: linear-gradient(transparent , #ffffff 60%, white 40%);
+  /* -webkit-mask: linear-gradient(red,#00ff1c); */
+  -webkit-mask: 
+  linear-gradient(
+      transparent,
+      #ffffff 20%,
+      white 80%,
+      transparent
+    );
+
 }
 .whatIdo .Content .Card .desc::-webkit-scrollbar {
     width: 4px;
@@ -412,7 +422,6 @@ ul {
     /* background-color: #888; */
     font-size: 14px;
     margin: 12px;
-    height: 120px;
 }
 
 /* Projects Style */
