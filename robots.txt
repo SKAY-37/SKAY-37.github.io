@@ -2,3 +2,20 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+
+User-agent: Googlebot-Image
+Disallow: /images/public/16Face.svg
+Disallow: /images/public/16Fav.ico
+Disallow: /images/public/3f3a3831234507.564a1d2338123.gif
+Disallow: /images/public/BackEnd.svg
+Disallow: /images/public/facebook.svg
+Disallow: /images/public/FavIcon.svg
+Disallow: /images/public/github.svg
+Disallow: /images/public/insta.svg
+Disallow: /images/public/lightIcon.svg
+Disallow: /images/public/nati.svg
+Disallow: /images/public/Picsart_23-10-23_19-39-16-479.png
+Disallow: /images/public/Scams.svg
+Disallow: /images/public/Shraflix.svg
+Disallow: /images/public/UI.svg
+Disallow: /images/public/Web Developer.svg
