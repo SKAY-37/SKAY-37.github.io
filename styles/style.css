@@ -20,6 +20,7 @@
 #Loading img {
     animation: loading 3s infinite;
     width: 200px;
+    pointer-events: none;
 }
 #Loading h1{
     color: white;
