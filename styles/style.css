@@ -589,6 +589,8 @@ textarea {
     font-size: small;
     color: #fedb4e70;
     color: #cecece7a;
+    display: flex;
+    place-items: center;
 }
 
 .Likefotter {
