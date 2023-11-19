@@ -22,8 +22,8 @@
     <script src="scripts/jquery.min.js"></script>
     <title>Jawad Boulmal</title>
 </head>
-<body onload="loaded()">
-    <div id="Loading">
+<body onload="loaded() ">
+    <div style="display: none;" id="Loading">
         <img src="images/public/3f3a3831234507.564a1d2338123.gif" alt="">
         <h1>Something Great Is Loading For You !</h1>
     </div>
@@ -302,16 +302,30 @@
                         I'm Jawad Boulmal, your friendly web developer. Whether you're a business owner or a creative mind with a unique project, I'm here to bring your ideas to life. Explore my portfolio, and if you're ready to dive in or have any questions, shoot me a message! Let's make your digital dreams a reality! 😊</p>
                     </div>
                     <div class="LeftSec media1145" >
-                       <form action="" id="form" name="form1" >
+                       <form  action="" id="form" name="form1" >
                             <input required class="inputName marg" id="name" type="text" placeholder="Name">
                             <input  class="inputEmail marg" name="email" id="email" type="" placeholder="Email">
                             <span class="AlertMesssage" style=" color: rgb(185, 9, 9);" id="EmailErr"></span>
                             <textarea required class="inputMess marg" id="message" name="" placeholder="Message" id="" cols="30" rows="4"></textarea>
                             <p class="AlertMesssage">please don't hesitate to Say Hi to me !</p>
-                            <input onclick="" type="button" id="send" value="Send">
+                            <button id="send"  type="button">
+                                <div id="underIcon" class="" ><!--underadioIcon-->
+                                    <div id="iconsend" class="">Send</div><!--material-symbols-outlined radioIcon-->
+
+                                </div>
+                            </button>
+                            <span class="AlertMesssage connexion" style="color: rgb(185, 9, 9);" id="">connexion problem , try again !</span>
+
                         </form>
-                        <div class="HiDone" id="finallyMessage">
-                            <span class="material-symbols-outlined done"> done</span>
+                        <div  class="HiDone" id="finallyMessage">
+                            <div style="position: relative;display: flex;justify-content: center;" class="emogies">
+                                <div class="faces">
+                                    <span style="position: absolute;" class="material-symbols-outlined done"> sentiment_calm</span>
+                                    <span  class="material-symbols-outlined done"> sentiment_excited</span>
+                                </div>
+                                <span class="material-symbols-outlined done hand"> waving_hand</span>
+                                
+                            </div>
                             <h1 style="text-align: center;">Thank You <span id="ThereName"></span> ,</h1>
                             <h1 style="display: flex; justify-content: center;place-items: center;">You Just Said Hi ! 
                             </h1>
@@ -380,6 +394,6 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/blob.min.js"></script>
     <script src="scripts/controller.js"></script>
-    <script src="scripts/Testscroll.js"></script>
+    <!-- <script src="scripts/Testscroll.js"></script> -->
 </body>
 </html>

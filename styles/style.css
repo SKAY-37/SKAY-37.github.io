@@ -5,8 +5,9 @@
     font-family: 'Poppins', sans-serif;
     scrollbar-width: none;
 }
-#Loading{
-    background-color:#202020;
+
+#Loading {
+    background-color: #202020;
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -17,61 +18,70 @@
     flex-direction: column;
     opacity: 1;
 }
+
 #Loading img {
     animation: loading 3s infinite;
     width: 200px;
     pointer-events: none;
 }
-#Loading h1{
+
+#Loading h1 {
     color: white;
 }
-#finallyMessage{
+
+#finallyMessage {
     display: none;
 }
 
-#heights{
+#heights {
     height: 100vh;
     overflow: hidden;
 }
 
 
-body{
+body {
     background-color: #202020;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
 
 @keyframes socialMediaLanding1 {
-    from{
+    from {
         top: -100px;
     }
-    to{
+
+    to {
         top: 0px;
     }
 }
 
 @keyframes socialMediaLanding2 {
-    from{
+    from {
         top: 0px;
         opacity: 1;
     }
-    to{
+
+    to {
         top: -100px;
         opacity: 0;
     }
 }
+
 @keyframes Dandinition {
-    from{
+    from {
         position: relative;
         left: -200px;
         opacity: 0;
     }
-    to{
+
+    to {
         position: relative;
         left: 0px;
         opacity: 1;
@@ -79,12 +89,13 @@ a {
 }
 
 @keyframes Fandinition {
-    from{
+    from {
         position: relative;
         left: 0px;
         opacity: 1;
     }
-    to{
+
+    to {
         position: relative;
         left: -200px;
         opacity: 0;
@@ -92,7 +103,7 @@ a {
 }
 
 
-#virtualUpBar{
+#virtualUpBar {
     height: 100px;
     width: 100%;
     display: none;
@@ -102,50 +113,58 @@ a {
     z-index: 6;
     top: 0%;
 }
-#virtualUpBar .socialMedia{
+
+#virtualUpBar .socialMedia {
     padding-right: 20px;
 }
 
-#virtualUpBar .socialMedia ul a{
+#virtualUpBar .socialMedia ul a {
     background-color: rgb(26, 26, 26);
-    border-radius:50% ;
+    border-radius: 50%;
     margin-left: 10px;
 }
 
 
 
 
-.display p{
+.display p {
     padding: 0px 50px 0px 0px;
 }
-.marginTop{
+
+.marginTop {
     margin-top: 70px;
 }
+
 ul {
     list-style: none;
 }
-.Lighting{
+
+.Lighting {
     transition: .1s;
 }
-.Lighting:hover{
+
+.Lighting:hover {
     color: #FEDA4E;
     cursor: pointer;
     transition: .1s;
-    
+
 }
 
-.WhiteLighting{
+.WhiteLighting {
     transition: .1s;
 
 }
-.WhiteLighting:hover{
-    color:white;
+
+.WhiteLighting:hover {
+    color: white;
     cursor: pointer;
     transition: .1s;
 }
-.logo{
+
+.logo {
     cursor: pointer;
 }
+
 /* On Egde And ... */
 /* width */
 ::-webkit-scrollbar {
@@ -198,15 +217,16 @@ ul {
     border-bottom: 1px solid transparent;
 }
 
-.upbar .listMenu ul a:hover{
+.upbar .listMenu ul a:hover {
     border-bottom: 1px Solid #FEDA4E;
     color: #FEDA4E;
     transition: .5s;
 }
 
-.socialMedia{
+.socialMedia {
     position: relative;
 }
+
 .socialMedia ul {
     display: flex;
     place-items: center;
@@ -216,19 +236,23 @@ ul {
 .socialMedia ul li img {
     width: 30px;
 }
-.socialMedia svg path{
+
+.socialMedia svg path {
     stroke: white;
     transition: .5s;
 
 }
+
 .socialMedia ul a {
     padding: 10px;
 }
-.socialMedia ul a:hover svg path{
+
+.socialMedia ul a:hover svg path {
     stroke: #FEDA4E;
     transition: .5s;
 
 }
+
 .socialMedia ul li {
     display: flex;
     place-items: center;
@@ -240,9 +264,11 @@ ul {
     width: 80%;
     /* background: red; */
 }
-.BannerLogo{
+
+.BannerLogo {
     color: #FEDA4E;
 }
+
 .heroBanner {
     height: 80vh;
     /* background-color: chartreuse; */
@@ -259,7 +285,7 @@ ul {
 }
 
 
-.Widss{
+.Widss {
     width: 100%;
     display: none;
     justify-content: center;
@@ -272,15 +298,18 @@ ul {
     font-weight: lighter;
     margin-bottom: 10px;
 }
-.heroBanner .specialisation p{
+
+.heroBanner .specialisation p {
     color: white;
 }
-.heroBanner .Description{
+
+.heroBanner .Description {
     display: flex;
     place-items: center;
     justify-content: center;
 }
-.heroBanner .Description p{
+
+.heroBanner .Description p {
     height: 100px;
     display: flex;
     place-items: center;
@@ -310,10 +339,12 @@ ul {
     color: white;
     font-weight: 300;
 }
-.title h1{
+
+.title h1 {
     font-weight: 300;
     font-size: 30px;
 }
+
 .Content {
     display: flex;
     width: 100%;
@@ -332,23 +363,26 @@ ul {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 0px 10px #222222;
-    transition: .5s;    
-    position:relative ;
+    transition: .5s;
+    position: relative;
     top: 0px;
 }
+
 .whatIdo .Content .Card:hover {
     animation: Floating infinite 2s;
 }
 
 @keyframes Floating {
-    0%{
+    0% {
         top: 0px;
     }
-    50%{
+
+    50% {
         top: -10px;
 
     }
-    100%{
+
+    100% {
         top: 0px;
     }
 }
@@ -387,19 +421,18 @@ ul {
     -webkit-box-orient: vertical;
     overflow: scroll;
     height: 100px;
-  overflow-x: hidden;
-  scrollbar-color: #fedb4e60 #272727;
-  mask: linear-gradient(transparent , #ffffff 60%, white 40%);
-  /* -webkit-mask: linear-gradient(red,#00ff1c); */
-  -webkit-mask: 
-  linear-gradient(
-      transparent,
-      #ffffff 20%,
-      white 80%,
-      transparent
-    );
+    overflow-x: hidden;
+    scrollbar-color: #fedb4e60 #272727;
+    mask: linear-gradient(transparent, #ffffff 60%, white 40%);
+    /* -webkit-mask: linear-gradient(red,#00ff1c); */
+    -webkit-mask:
+        linear-gradient(transparent,
+            #ffffff 20%,
+            white 80%,
+            transparent);
 
 }
+
 .whatIdo .Content .Card .desc::-webkit-scrollbar {
     width: 4px;
 }
@@ -431,9 +464,10 @@ ul {
 }
 
 /* About Style */
-.About{
+.About {
     color: white;
 }
+
 .About .Content .RightSec {
     /* background-color: chartreuse; */
     width: 438px;
@@ -458,7 +492,8 @@ ul {
     overflow: hidden;
     pointer-events: none;
 }
-.About .Content .LeftSec .profileImage img{
+
+.About .Content .LeftSec .profileImage img {
     width: 100%;
     height: 100%;
 }
@@ -487,6 +522,7 @@ ul {
     width: 100%;
     width: -webkit-fill-available;
 }
+
 .LeftSec input {
     background-color: #CECECE;
     border: none;
@@ -508,7 +544,7 @@ ul {
     border: none;
     border-radius: 5px;
     background-color: #FEDA4E;
-}   
+}
 
 textarea {
     resize: none;
@@ -531,23 +567,25 @@ textarea {
 
 
 
-.SayHi{
+.SayHi {
     background-color: #202020;
 }
 
 
 
 
-.done{
+.done {
     color: #FEDA4E;
-    font-size:100px;
+    font-size: 100px;
     width: 100%;
     text-align: center;
 }
-#ThereName{
+
+#ThereName {
     color: #FEDA4E;
 }
-.AlertMesssage{
+
+.AlertMesssage {
     font-size: small;
     color: #fedb4e70;
     color: #cecece7a;
@@ -596,7 +634,8 @@ textarea {
     animation: toBottom .5s;
     top: 0px;
 }
-.pages a:hover{
+
+.pages a:hover {
     color: #FEDA4E;
 
 }
@@ -611,14 +650,142 @@ textarea {
     }
 }
 
-footer{
+footer {
     background-color: #202020;
     height: 50px;
     display: flex;
     justify-content: center;
-    place-items:center ;
+    place-items: center;
     color: white;
     font-size: 13px;
     z-index: 8;
     position: relative;
+}
+
+.emogies {
+    display: flex;
+}
+
+.faces {
+    position: relative;
+    background-color: #202020;
+}
+
+.done:nth-child(1),
+.done:nth-child(2) {
+    background: #202020;
+    opacity: 100%;
+    transition: .3s;
+}
+
+.hand {
+    font-size: 60px;
+    display: none;
+    background-color: #272727 !important;
+    text-align: left;
+    width: 0px;
+}
+
+.done:nth-child(1):hover {
+    opacity: 0%;
+}
+
+.done:nth-child(1):hover+.done:nth-child(2) {
+    opacity: 100%;
+}
+
+.faces:hover+.hand {
+    display: block;
+    animation: shakeHand 2s;
+}
+
+
+@keyframes shakeHand {
+    0% {
+        rotate: 30deg;
+    }
+
+    20% {
+        rotate: 0deg;
+
+    }
+
+    40% {
+        rotate: 30deg;
+
+    }
+
+    60% {
+        rotate: 0deg;
+
+    }
+
+    80% {
+        rotate: 30deg;
+
+    }
+
+    100% {
+        rotate: 0deg;
+
+    }
+}
+
+@keyframes showing {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes hiding {
+    0% {
+        opacity: 0%;
+
+    }
+
+    100% {
+        opacity: 100%;
+
+    }
+}
+
+@keyframes buttonGO {
+    0% {
+        left: 0px;
+        transition: 1s;
+    }
+
+    50% {
+        left: 56px;
+        transition: 1s;
+    }
+
+    100% {
+        left: 0px;
+        transition: 1s;
+    }
+}
+
+.underadioIcon {
+    display: flex;
+    place-items: center;
+    transition: .1s;
+    width: 50%;
+    text-align: left;
+    position: relative;
+}
+
+.radioIcon {
+    animation: buttonGO 2s infinite;
+    position: relative;
+}
+
+.connexion{
+    color: #af9c52;
+    display: none;
+    padding: 5px 0px;
 }
