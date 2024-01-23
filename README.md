@@ -22,9 +22,9 @@ I'm always open to new web development opportunities, collaborations, and discus
 
 📫 How to Reach Me:
 
-    Email : jawadboulmal@skayologie.github.io 
-    Facebook : www.facebook.com/ASMMID
-    Portfolio Website : www.skayologie.github.io
+    Email : Jawadboulmal@programmer.net
+    Facebook : https://facebook.com/ASMMID
+    Portfolio Website : https://skayologie.github.io/
 
 Thank you for visiting my GitHub portfolio. I hope you find my web development work inspiring and insightful. Let's innovate, learn, and grow together in the world of web development!
 
