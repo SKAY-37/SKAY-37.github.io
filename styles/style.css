@@ -107,11 +107,12 @@ a {
     height: 100px;
     width: 100%;
     display: none;
-    justify-content: right;
+    justify-content: space-between;
     place-items: center;
     position: fixed;
     z-index: 6;
     top: 0%;
+
 }
 
 #virtualUpBar .socialMedia {
@@ -790,4 +791,18 @@ footer {
     color: #af9c52;
     display: none;
     padding: 5px 0px;
+}
+
+.NightLight{
+    height: 100%;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.NightLight span{
+    background-color: rgb(26, 26, 26);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
 }

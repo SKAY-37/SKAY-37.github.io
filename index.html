@@ -70,7 +70,13 @@
         </div>
         <!-- End Up Bar -->
         <div id="virtualUpBar">
+            <div class="NightLight">
+                <span id="Mode" style="display:none;color: white;" class="material-symbols-outlined">
+                    light_mode
+                </span>
+            </div>
             <div class="socialMedia">
+
                 <ul>
                     <a href="https://www.instagram.com/skay37_/" target="_blank"><li>
                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,8 +316,7 @@
                             <p class="AlertMesssage">please don't hesitate to Say Hi to me !</p>
                             <button id="send"  type="button">
                                 <div id="underIcon" class="" ><!--underadioIcon-->
-                                    <div id="iconsend" class="">Send</div><!--material-symbols-outlined radioIcon-->
-
+                                    <div id="iconsend" style="color: black;" class="">Send</div><!--material-symbols-outlined radioIcon-->
                                 </div>
                             </button>
                             <span class="AlertMesssage connexion" style="color: rgb(185, 9, 9);" id=""><span class="material-symbols-outlined">wifi </span> connexion problem , try again !</span>
@@ -395,6 +400,29 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/blob.min.js"></script>
     <script src="scripts/controller.js"></script>
+    <script>
+        var Hidone = document.getElementById("finallyMessage");
+        var Mode = document.getElementById("Mode");
+        var count = 0 ;
+        Hidone.onclick = ()=>{
+            count++
+            if (count === 5) {
+                alert("More 3 Clicks To unlock it !")
+            }
+            if (count === 8) {
+                localStorage.setItem("TetsMess","false");
+                location.reload();
+            }
+        }
+        Mode.onclick = () =>{$
+            if(Mode.innerHTML === "light_mode"){
+                Mode.innerHTML = "dark_mode"
+            }else{
+                Mode.innerHTML = "light_mode"
+            }
+        }
+        
+    </script>
     <!-- <script src="scripts/Testscroll.js"></script> -->
 </body>
 </html>
