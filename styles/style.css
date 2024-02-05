@@ -38,7 +38,53 @@
     overflow: hidden;
 }
 
+.fromfacebook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    /* display: none; */
+}
+.TheMSG{
+    background-color: #FEDA4E;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    border-radius: 6px;
+    position: relative;
+    animation: TheMSG 3s;
+    box-shadow: 0px 0px 20px black;
+}
+@keyframes TheMSG {
+    0%{
+        top: -100px;
+    }
+    25%{
+        top: 0px;
 
+    }
+    50%{
+        top: 0px;
+
+    }
+    70%{
+        top: 0px;
+        opacity: 1;
+
+    }
+    100%{
+        top: 100px;
+        opacity: 0;
+
+    }
+}
 body {
     background-color: #202020;
 }
