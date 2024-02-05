@@ -47,7 +47,7 @@
     width: 100%;
     z-index: 1000;
     position: fixed;
-    /* display: none; */
+    display: none; 
 }
 .TheMSG{
     background-color: #FEDA4E;
