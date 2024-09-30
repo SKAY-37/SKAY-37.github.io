@@ -1,0 +1,64 @@
+@media only screen and (max-width: 900px) {
+    .All .upbar  h1{
+        font-size: 48px;
+    }
+    .All .upbar p{
+        font-size: 25px;
+    }
+    .inputs .inputsGroup .inputfeild label{
+        font-size: 16px;
+    }
+    .inputs .inputsGroup .inputfeild:nth-child(1)
+        {
+        width: 35%;
+        }
+    .inputs .inputsGroup .inputfeild:nth-child(2)
+        {
+        width: 18%;
+        margin-left: 5px;
+        margin-right: 5px;
+        }
+        .inputs .inputsGroup .inputfeild:nth-child(3) {
+          width: 45%;
+        }
+        
+  }
+  @media only screen and (max-width: 650px) {
+    .inputs .inputsGroup
+{
+ position: relative;
+  flex-direction: column;
+}
+
+.inputs .inputsGroup .inputfeild:nth-child(1){
+    width: 100%;
+  }
+  .inputs .inputsGroup .inputfeild:nth-child(2){
+    width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+  }
+  .inputs .inputsGroup .inputfeild:nth-child(3){
+    width: 100%;
+  }
+  .inputs .inputsGroup .inputfeild:nth-child(4){
+    width: 100%;
+  }
+  .inputs .inputsGroup
+  {
+      position: relative;
+      flex-direction: column;
+      height: 395px;
+      
+    }
+    .inputs .inputsGroup .inputfeild:nth-child(5)
+{
+  width:100%;
+
+  position: initial;
+}
+
+.inputs .inputsGroup .inputfeild:nth-child(5) input{
+  margin-left:0px;
+}
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="fonts/icons/icon.css" />
+    <title>AirCrack-ng Helper</title>
+</head>
+<body>
+    <div class="container">
+        <div id="coppingmess" class="coppingsecc">
+            <p id="Message">Copied Successfuly !</p>
+        </div>
+        <div class="All">
+
+            <section class="upbar">
+                <h1><span class="dow">AirCrack</span><span class="dow2">-ng</span></h1>
+                <div class="qoute">
+                    <p>Helper</p>
+                </div>
+            </section>
+            <section class="inputs">
+                <div class="inputsGroup">
+                    <div class="inputfeild">
+                        <label for="essid">ESSID</label>
+                        <input placeholder="AA:BB:CC:DD:EE:FF" type="text" name="" id="essid">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="channel">Channel</label>
+                        <input placeholder="12" type="text" name="" id="channel">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="path">PATHNAME</label>
+                        <input placeholder="output" type="text" name="" id="path">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="cessid">Client ESSID(optional)</label>
+                        <input placeholder="11:22:33:44:55:66" type="text" name="" id="cessid">
+                    </div>
+                    <div class="inputfeild">
+                        <input type="button" onclick="field() " value="Hack It !" >
+                    </div>
+                </div>
+            </section>
+            
+            <section  class="commands">
+                <div class="commandGroup">
+                    <div class="commandField">
+                        <p id="v">iwconfig</p>
+                        <div class="icons">
+                            <button onclick="informations(0)">
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button>
+                            <button onclick="copyToClipboard(0)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                            
+                        </div>
+                        <div class="InfoSection">
+                            Run iwconfig to check the mode. If it’s in managed mode, continue with the next steps. If it’s already in monitor, then you likely left it in that state from a previous session and can skip the rest of this.
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>sudo airmon-ng check kill</p>
+                        <div class="icons">
+                            <button onclick="informations(1)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button>
+                            <button onclick="copyToClipboard(1)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            Next run sudo airmong-ng check kill to to stop any conflicting process that might interfere with setting up monitor mode.
+                        </div>
+                    </div>
+                    <div  class="commandField">
+                        <p>sudo airmon-ng start wlan0</p>
+                        <div class="icons">
+                            <button onclick="informations(2)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button>
+                            <button onclick="copyToClipboard(2)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            This command is used to bring your adapter back up in monitor mode.
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>sudo airmon-ng </p>
+                        <div class="icons">
+                            <!-- <button  onclick="informations(3)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button> -->
+                            <button onclick="copyToClipboard(3)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>iwconfig</p>
+                        <div class="icons">
+                            <!-- <button onclick="informations(4)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button> -->
+                            <button onclick="copyToClipboard(4)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            THis is hEllo world ddddddddddddd ddddddddddddddd ddddddddddddddddddd dddddddddd dd ddddddddddddd dddddddddddddddddddd ddddddddd!
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>sudo airodump-ng wlan0</p>
+                        <div class="icons">
+                            <button onclick="informations(5)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button>
+                            <button onclick="copyToClipboard(5)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            Using airodump-ng involves executing the tool with the monitoring interface (e.g., wlan0) and specifying various parameters such as the channel to monitor, the BSSID to filter, and the output file prefix for the captured data. Once started, airodump-ng will display live information about the networks and clients it detects.
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>sudo airodump-ng wlan0 --channel <span id="ChannelField" class="var">6</span> --bssid <span id="EssidField" class="var">AA:BB:CC:DD:EE:FF</span>  -w <span id="PathField" class="var">output</span></p>
+                        <div class="icons">
+                            <button onclick="informations(6)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button>
+                            <button onclick="copyToClipboard(6)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            <strong>--channel : </strong><i>Specifies the channel to listen on. Example: --channel 6 </i><br>
+                            <strong>--bssid : </strong><i>Filters the captured data to a specific BSSID. Example: --bssid AA:BB:CC:DD:EE:FF </i><br>
+                            <strong>-w : </strong><i>Sets the output file prefix for the captured data. Example: -w output </i><br>
+                            
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>sudo aireplay-ng --deauth 100 -c <span id="EssidField2" class="var">11:22:33:44:55:66</span> -a <span id="EssidField3" class="var">AA:BB:CC:DD:EE:FF</span> wlan0</p>
+                        <div class="icons">
+                            <button onclick="informations(7)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button>
+                            <button class="ntn" onclick="copyToClipboard(7)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            Using aireplay-ng involves specifying the attack type, target network, and relevant parameters depending on the attack. <br>
+                            <strong>--deauth</strong> <i>Executes a deauthentication attack, disconnecting clients from the target network. Example: --deauth 100</i><br>
+                            <strong>-a</strong>	<i>Specifies the target access point's BSSID. Example: -a AA:BB:CC:DD:EE:FF</i><br>
+                            <strong>-c</strong>	<i>Sets the target client's MAC address. Example: -c 11:22:33:44:55:66</i>
+                        </div>
+                    </div>
+                    <div class="commandField">
+                        <p>airmon-ng stop wlan0</p>
+                        <div class="icons">
+                            <!-- <button onclick="informations(8)" >
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                            </button> -->
+                            <button onclick="copyToClipboard(8)">
+                                <span class="material-symbols-outlined">
+                                    content_copy
+                                </span>
+                            </button>
+                        </div>
+                        <div class="InfoSection">
+                            THis is hEllo world ddddddddddddd ddddddddddddddd ddddddddddddddddddd dddddddddd dd ddddddddddddd dddddddddddddddddddd ddddddddd!
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

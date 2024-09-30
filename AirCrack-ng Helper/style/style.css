@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'joben';
+    src: url('/fonts/joben/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf');
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('/fonts/poppins/Poppins-Regular.ttf');
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:#243C55 ;
+}
+.container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+
+}
+.coppingsecc{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    display: none;
+    /* background-color: red; */
+    z-index: 100;
+}
+.coppingsecc p{
+    background-color:#243C55 ;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: joben;
+    font-size: 25px;
+    font-weight: 400;
+    box-shadow: 4px 5px 0px black;
+    position: relative;
+    bottom: -200px;
+}
+.All{
+    /* background-color: aqua; */
+    width: 80%;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 988px;
+}
+.All .upbar{
+    background-color:#243C55;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    width: 80%;
+    width: 100%;
+    z-index: 2;
+}
+.All .upbar h1{
+    color: #BAD4D8;
+    font-weight: 600;
+    font-family: joben;
+    font-size: 60px;
+    text-shadow: 3px 6px 0px black;
+}
+.All .upbar .qoute{
+    position: absolute;
+    /* background-color: violet; */
+    width: 50px;
+    height: 100px;
+    transform: translateX(100px);
+}
+.All .upbar p{
+    /* background-color: yellow; */
+    transform: rotate(-15deg);
+    font-family: joben;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    color: #A32950;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.699);
+
+}
+
+/* ////////inputs//////// */
+.inputs{
+    margin-top: 140px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.inputs .inputsGroup{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.inputs .inputsGroup .inputfeild{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column ;
+    position: relative;
+}
+.inputs .inputsGroup .inputfeild input{
+    background-color: #bad4d896;
+    height: 45px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 7px #0000006e;
+}
+.inputs .inputsGroup .inputfeild label{
+    /* background-color: red; */
+    margin-top: 10px;
+    font-family: poppins;
+    color: white;
+    font-size: 18px;
+}
+
+.inputs .inputsGroup .inputfeild:nth-child(1){
+    width: 40%;
+}
+.inputs .inputsGroup .inputfeild:nth-child(2){
+    width: 14%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.inputs .inputsGroup .inputfeild:nth-child(3){
+    width: 44%;
+}
+.inputs .inputsGroup .inputfeild:nth-child(4){
+    width: 50%;
+}
+.inputs .inputsGroup .inputfeild:nth-child(5){
+    width: 49%;
+}
+.inputs .inputsGroup .inputfeild:nth-child(5) input{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    background-color: #bad4d8;
+    margin-left: 5px;
+    box-shadow: 0px 5px 1px #000000a3;
+
+}
+
+/* ///commands/// */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.commands{
+    margin-top: 70px;
+    width: 80%;
+}
+.commandField{
+    background-color: #BAD4D8;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.commandField p{
+    padding: 20px;
+    font-family: poppins;
+    width: 70%;
+}
+.commandField p::before{
+    content: "$";
+    padding-right: 18px;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 100;
+}
+.icons{
+    display: flex;
+}
+.icons button{
+    background-color: transparent;
+    border: none;
+}
+.commandField span{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 0px 15px 0px 18px;
+}
+
+.commandField p .var{
+    display: inline;
+    color:#A32950;
+    padding: 0;
+}
+
+
+/* /::::::::::: */
+
+@keyframes dow {
+    0%{
+        color: #BAD4D8;
+    }
+    20%{
+        color: white;
+    }
+    40%{
+        color: #BAD4D8;
+    }
+    46%{
+        color: white;
+    }
+
+    
+}
+@keyframes dow2 {
+    59%{
+        color:#BAD4D8;
+    }
+    70%{
+        color: white;
+
+    }
+    90%{
+        color:#BAD4D8;
+    }
+    100%{
+        color: white;
+
+    }
+}
+@keyframes dow3 {
+    59%{
+        color:#A32950;
+    }
+
+
+    100%{
+        color:#ff0051;
+
+    }
+}
+.All .upbar h1 .dow{
+    animation: dow 2s infinite;
+}
+.All .upbar h1 .dow2{
+    animation: dow2 2s infinite;
+}
+.qoute p{
+    animation: dow3 7s infinite;
+
+}
+.icons button {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.icons button:hover{
+    background-color: #65717e;
+}
+
+/* /////////////////// */
+@keyframes CoppingShow {
+    0%{    bottom: -200px;}
+    100%{    bottom: 0px;}
+}
+@keyframes CoppingHide {
+    0%{    bottom: 0px;}
+    100%{    bottom: -200px;}
+}
+/* :///////////////// */
+.commandField{
+    position: relative;
+
+}
+.InfoSection{
+    right: 69px;
+    top: 59px;
+    padding: 15px;
+    color: rgb(206, 206, 206);
+    background-color: #344659;
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    border-radius: 5px;
+    display: none;
+    border:solid 1px Black;
+    box-shadow:0px 5px 9px #0000008c;
+}
+
+.InfoSection::before{
+    transform: rotate(45deg);
+    background-color: #344659;
+    content: "";
+    position: absolute;
+    right: 25px;
+    top:-7px;
+    width: 10px;
+    height: 10px;
+    border:solid 1px Black;
+    border-bottom: none;
+    border-right: none;
+}
+
